@@ -6,20 +6,20 @@ import {
   forgotPassword, 
   resetPassword, 
   getQuestionsForUser
-} from '../controller/authController.js';
+} from '../controller/authcontroller.js';
 import auth from '../middleware/auth.js';
 
 const userRoute = express.Router();
 
 // --- مسارات إنشاء الحساب والتحقق ---
-userRoute.post('/register', register);     // إرسال بيانات التسجيل وأول OTP
-userRoute.post('/verify-otp', verifyOTP);   // التأكد من الكود وتفعيل الحساب
+userRoute.post('/register', register);   
+userRoute.post('/verify-otp', verifyOTP);   
 
 // --- مسار تسجيل الدخول ---
-userRoute.post('/login', login);            // الدخول والحصول على التوكن
+userRoute.post('/login', login);          
 
 // --- مسارات استعادة كلمة المرور ---
-userRoute.post('/forgot-password', forgotPassword); // إرسال كود Reset للإيميل
+userRoute.post('/forgot-password', forgotPassword); 
 userRoute.post('/reset-password', resetPassword);  
 userRoute.get('/questions', auth, getQuestionsForUser);
 export default userRoute;
