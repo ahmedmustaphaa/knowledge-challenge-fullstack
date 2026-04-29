@@ -24,7 +24,7 @@ function Users() {
         const config = {
           headers: { Authorization: `Bearer ${token}` }
         };
-        await axios.delete(`http://localhost:5000/api/admin/users/${userId}`, config);
+        await axios.delete(`https://knowledge-challenge-fullstack.vercel.app/api/admin/users/${userId}`, config);
         alert("تم حذف المستخدم بنجاح");
         dispatch(getAllUsers()); 
       } catch (error) {

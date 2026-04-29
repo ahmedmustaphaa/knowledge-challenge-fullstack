@@ -36,7 +36,7 @@ function QuestionsBank() {
     if (window.confirm("هل أنت متأكد من حذف هذا السؤال؟")) {
       try {
         const token = user?.token || user?.data?.token;
-        await axios.delete(`http://localhost:5000/api/quistion/${id}`, {
+        await axios.delete(`https://knowledge-challenge-fullstack.vercel.app/api/quistion/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         dispatch(getAllQuestions());
