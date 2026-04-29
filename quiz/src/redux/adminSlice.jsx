@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'https://knowledge-challenge-fullstack-63u8.vercel.app/api/admin';
-const API_URL_quistion = 'https://knowledge-challenge-fullstack-63u8.vercel.app/api/quistion';
+const API_URL = 'https://knowledge-challenge-fullstack-pt8i.vercel.app/api/admin';
+const API_URL_quistion = 'https://knowledge-challenge-fullstack-pt8i.vercel.app/api/quistion';
 
 // دالة مساعدة لجلب التوكن (عشان متكررش الكود)
 const getAuthConfig = (thunkAPI) => {

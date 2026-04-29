@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'https://knowledge-challenge-fullstack-63u8.vercel.app/api/user';
+const API_URL = 'https://knowledge-challenge-fullstack-pt8i.vercel.app/api/user';
 
 // 1. جلب الأسئلة المخصصة للمستخدم
 export const getQuizQuestions = createAsyncThunk('quiz/getQuestions', async (_, thunkAPI) => {

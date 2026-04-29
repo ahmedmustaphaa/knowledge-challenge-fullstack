@@ -40,7 +40,7 @@ function Result() {
           category: "General" // لازم تتبعت لأنها required في الموديل
         };
 
-        const response = await axios.post('https://knowledge-challenge-fullstack-63u8.vercel.app/api/results/save', resultData, config);
+        const response = await axios.post('https://knowledge-challenge-fullstack-pt8i.vercel.app/api/results/save', resultData, config);
         
         if (response.status === 201 || response.status === 200) {
           console.log("✅ تم حفظ النتيجة في قاعدة البيانات!");

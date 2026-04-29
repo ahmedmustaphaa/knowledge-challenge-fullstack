@@ -4,7 +4,7 @@ import axios from 'axios';
 // جلب اليوزر من الـ LocalStorage لو موجود
 const user = JSON.parse(localStorage.getItem('user'));
 
-const API_URL = 'https://knowledge-challenge-fullstack-63u8.vercel.app/api/user';
+const API_URL = 'https://knowledge-challenge-fullstack-pt8i.vercel.app/api/user';
 
 // 1. تسجيل مستخدم جديد
 export const register = createAsyncThunk('auth/register', async (userData, thunkAPI) => {
