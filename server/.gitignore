@@ -1,0 +1,15 @@
+# حماية ملفات البيئة (أهم سطر)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# تجاهل فولدر المكتبات (عشان المساحة)
+node_modules/
+dist/
+build/
+
+# ملفات النظام
+.DS_Store
+thumbs.db
