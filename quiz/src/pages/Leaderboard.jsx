@@ -23,7 +23,7 @@ function Leaderboard() {
           headers: { Authorization: `Bearer ${token}` }
         } : {};
 
-        const response = await axios.get('https://knowledge-challenge-fullstack.vercel.app/api/results/leaderboard', config);
+        const response = await axios.get('https://knowledge-challenge-fullstack-63u8.vercel.app/api/results/leaderboard', config);
         setLeaders(response.data);
       } catch (error) {
         console.error("خطأ في جلب المتصدرين:", error.response?.data || error.message);

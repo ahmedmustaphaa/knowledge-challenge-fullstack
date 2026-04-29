@@ -28,7 +28,7 @@ function Stats() {
           headers: { Authorization: `Bearer ${token}` }
         } : {};
 
-        const response = await axios.get('https://knowledge-challenge-fullstack.vercel.app/api/results/stats', config);
+        const response = await axios.get('https://knowledge-challenge-fullstack-63u8.vercel.app/api/results/stats', config);
         setStatsData(response.data);
       } catch (error) {
         console.error("Error fetching stats:", error);

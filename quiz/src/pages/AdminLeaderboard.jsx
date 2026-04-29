@@ -16,7 +16,7 @@ function AdminLeaderboard() {
       const config = {
         headers: { Authorization: `Bearer ${token}` }
       };
-      const response = await axios.get('https://knowledge-challenge-fullstack.vercel.app/api/results/leaderboard', config);
+      const response = await axios.get('https://knowledge-challenge-fullstack-63u8.vercel.app/api/results/leaderboard', config);
       setLeaders(response.data);
     } catch (error) {
       console.error("Error:", error.response?.data || error.message);
@@ -36,7 +36,7 @@ function AdminLeaderboard() {
         const config = {
           headers: { Authorization: `Bearer ${token}` }
         };
-        await axios.delete(`https://knowledge-challenge-fullstack.vercel.app/api/results/${resultId}`, config);
+        await axios.delete(`https://knowledge-challenge-fullstack-63u8.vercel.app/api/results/${resultId}`, config);
         setLeaders(leaders.filter(item => item._id !== resultId));
         alert("تم حذف النتيجة بنجاح");
       } catch (error) {
